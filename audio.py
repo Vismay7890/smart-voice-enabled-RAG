@@ -51,16 +51,16 @@ def recognize_speech_from_mic(recognizer, microphone):
         response["error"] = "Unable to recognize speech"
     return response
 
-GROQ_API_KEY = "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"
+GROQ_API_KEY = ""
 os.environ["GROQ_API_KEY"] = GROQ_API_KEY
-OPENAI_API_KEY = "sk-nzO2bpiEUHY5lwGWd43IT3BlbkFJ9u7o4AmleYcssP7p3VLx7"
+OPENAI_API_KEY = ""
 os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
 embeddings = OpenAIEmbeddings()
 model = ChatGroq(temperature=0.5, model_name="llama3-70b-8192")
-TAVILY_API_KEY = "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"
+TAVILY_API_KEY = ""
 os.environ["TAVILY_API_KEY"] = TAVILY_API_KEY
 # model = ChatOpenAI(model="gpt-3.5-turbo-1106" , temperature = 0.5)
-PC_API_KEY = "529d6a46-a7cf-46a5-a7a1-398fd0a08284"
+PC_API_KEY = ""
 os.environ["PINECONE_API_KEY"] = PC_API_KEY
 pc = Pinecone(api_key=os.environ.get("PINECONE_API_KEY"))
 
@@ -116,7 +116,7 @@ agentExecutor = AgentExecutor(
 from pyht import Client, TTSOptions, Format
 
 # Initialize PlayHT API with your credentials
-client = Client("FZwyFZ1d5pXBXE4VRklYmETIiyJ3", "4fd5b1fb5ef84afa89fcfe2efbe0ba0d")
+client = Client("USER_ID", "API-KEY")
 
 # configure your stream
 options = TTSOptions(
