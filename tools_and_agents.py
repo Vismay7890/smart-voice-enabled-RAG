@@ -18,13 +18,13 @@ from langchain.agents import create_tool_calling_agent
 from langchain.agents import AgentExecutor
 from langchain_groq import ChatGroq
 
-GROQ_API_KEY = "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"
+GROQ_API_KEY = ""
 os.environ["GROQ_API_KEY"] = GROQ_API_KEY
-OPENAI_API_KEY = "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"
+OPENAI_API_KEY = ""
 os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
 embeddings = OpenAIEmbeddings()
 model = ChatGroq(temperature=0.5, model_name="llama3-70b-8192")
-TAVILY_API_KEY = "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"
+TAVILY_API_KEY = ""
 os.environ["TAVILY_API_KEY"] = TAVILY_API_KEY
 # model = ChatOpenAI(model="gpt-3.5-turbo-1106" , temperature = 0.5)
 PC_API_KEY = "529d6a46-a7cf-46a5-a7a1-398fd0a08284"
